@@ -6,7 +6,7 @@ struct employee
 {
     char name[100],acc_num[100];
     int salary;
-};
+}name,acc_num,salary;
 void main()
 {
     struct employee *emp;
