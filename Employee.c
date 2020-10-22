@@ -27,7 +27,7 @@ void main()
     {
 
         printf("Enter the employee Name:");
-        scanf(" %s",&emp[i].name);
+        scanf(" %[^\n]",emp[i].name);
         printf("Enter the employee's Account Number:");
         scanf("%s",&emp[i].acc_num);
         printf("Enter the employee's Salary:");
