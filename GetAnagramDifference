@@ -1,0 +1,27 @@
+#include <iostream>
+#include <string>
+//program to find minimum number of changes needed in string s2 to make it an anagram of string s1, the strings consists of lowercase alphabets only
+
+int getAnagramDifference(std::string s1, std::string s2){
+
+        int freq[26]{};
+
+        for(char c: s1) freq[c - 'a']++;
+        for(char c: s2) freq[c - 'a']--;
+        int ans = 0;
+        for(auto i: freq) i <= 0 ?: ans += i;
+
+        return ans;
+
+}
+
+int main()
+{
+        std::string s1, s2;
+        std::cin >> s1 >> s2;
+
+        std::cout << "Minimum Anagram difference for the given strings is " << getAnagramDifference(s1, s2) << std::endl;
+
+        return 0;
+
+}
