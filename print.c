@@ -1,10 +1,18 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-int main(void) {
+int main(void)
+{
 	int i;
-	for(i=1;i<=100;i++){
+	printf("---------------------------------------------------\n");
+	printf("Enter a number from which you want to count:\t");
+	scanf("%d", &i);
+	printf("\n---------------------------------------------------\n");
 
-					printf("%d\n",i);}
-	return EXIT_SUCCESS;
+	for (i; i <= 100; i++)
+	{
+
+		printf("%d\n", i);
+	}
+	return 0;
 }
