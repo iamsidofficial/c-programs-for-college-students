@@ -21,6 +21,11 @@ struct Node * addingElements(struct Node * head, int ele){
     return(head);
     }
 
+struct Node * deletionElements(struct Node * head){
+    head = head->next;
+    return(head);
+    }
+
 void llTraversal(struct Node * head){
     while(head != NULL){
         printf("%d\n", head->data);
