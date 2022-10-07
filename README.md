@@ -1,5 +1,5 @@
 # c-programs-for-college-students
-# Due to lack of time, this Repository wont't be accepting any new PRs after October 7.
+# This repository is not accepting any new PRs.
 
 A collection of C & C++ programs useful for college students.
 
