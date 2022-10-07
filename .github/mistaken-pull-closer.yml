@@ -1,0 +1,5 @@
+filters:
+  - true
+
+commentBody: |
+  Thanks for your contribution!  Unfortunately, we are'nt accepting any new PRs. See the README.md for more details.
