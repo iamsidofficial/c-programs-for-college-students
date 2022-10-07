@@ -1,0 +1,24 @@
+name: 'Repo Lockdown'
+
+on:
+  workflow_dispatch:
+  issues:
+    types: opened
+  pull_request_target:
+    types: opened
+
+permissions:
+  issues: write
+  pull-requests: write
+
+jobs:
+  action:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: dessant/repo-lockdown@v2
+        with:
+          github-token: ${{ github.token }}
+          pr-comment: >
+            This repository does not accept pull requests,
+            see the README for details.
+          skip-closed-pr-comment: true

@@ -1,6 +1,6 @@
-# c-programs-for-college-students
-A collection of C & C++ programs useful for college students.
+# This repository is not accepting any new PRs.
 
-Programs need to have a main function for being in this repository.
+All new PRs will be automatically closed.
 
-Start contributing.
+
+
