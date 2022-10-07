@@ -2,5 +2,5 @@
 
 All new PRs will be automatically closed.
 
-
+Check for comments on pr close.
 
