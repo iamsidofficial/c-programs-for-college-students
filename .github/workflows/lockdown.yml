@@ -20,3 +20,7 @@ jobs:
       - uses: dessant/repo-lockdown@v2
         with:
           github-token: ${{ github.token }}
+          pr-comment: >
+            This repository does not accept pull requests,
+            see the README for details.
+          skip-closed-pr-comment: true
