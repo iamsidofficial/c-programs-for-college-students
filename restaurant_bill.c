@@ -198,8 +198,8 @@ int main(int argc, char const *argv[])
         printf("\nError");
         break;
     }
-    printf("\nDo youn want to perform another operation [y/n]:\t");
-    scanf("%s", contFlag);
+    printf("\nDo you want to perform another operation [y/n]:\t");
+    scanf("%s", &contFlag);
 }
     
     printf("\n\n");    
