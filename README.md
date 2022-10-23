@@ -1,6 +1,6 @@
-# This repository is not accepting any new PRs.
+New PRs are being accepted now.
 
-All new PRs will be automatically closed.
+
 
 
 
