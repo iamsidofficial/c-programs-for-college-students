@@ -1,0 +1,75 @@
+#include<stdio.h>
+#include<stdlib.h>
+struct tn{
+    int data;
+    struct tn *left;
+    struct tn *right;
+    struct tn *parent;
+};
+struct tn *root = NULL;
+struct tn *create(int n)
+{
+    struct tn *new_node=(struct tn*)malloc(sizeof(struct tn));
+    if (new_node==NULL)
+    {
+      printf("MEMORY CANNOT BE ALLOCATED");
+    }
+    new_node->data=n;
+    new_node->left=NULL;
+    new_node->right=NULL;
+    return new_node;
+}
+void insert(int a)
+{
+    struct tn*node=create(a);
+    if(node!=NULL){
+        if(root==NULL){
+            node->parent=NULL;
+            root=node;
+            printf("%d data is inserted in the bst\n",a);
+        }
+        else{
+        struct tn*temp=root;
+        struct tn*prev=NULL;
+        while(temp!=NULL){
+            prev=temp;
+            if (a<temp->data){
+                temp=temp->left;
+
+            }
+            else{
+                temp=temp->right;
+            }
+        } 
+        node->parent=prev;
+        if(prev->data>a){
+            prev->left = node;
+        }
+        else{
+            prev->right =node;
+        }
+         printf("Node having data %d was inserted\n",a);
+    }
+}
+}
+void display(struct tn* node)
+{
+    if (node == NULL)
+        return;
+
+    display(node->left);
+
+    printf("%d ", node->data);
+
+    display(node->right);
+}
+void main(){
+    insert(7);
+    insert(5);
+    insert(4);
+    insert(2);
+    insert(8);
+    insert(1);
+    insert(6);
+    display(root);
+}
