@@ -1,3 +1,3 @@
-# New Pull Requests are being accepted now.
+# Contributions to this repository are closed for now.
 
-Programs must have a main function.
+All new Pull Requests will be closed automatically.
